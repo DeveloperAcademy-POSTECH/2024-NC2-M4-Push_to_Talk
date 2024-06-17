@@ -1,11 +1,10 @@
 # 2024-NC2-M4-Push_to_Talk
 Apple Developer Academy 3rd Morning Session NC2 Pair4(Arthur&amp;Keenie)'s Push to Talk
 
-# 2024-NC2-M0-AugmentedReality
 ## 🎥 Youtube Link
 (추후 만들어진 유튜브 링크 추가)
 
-## 💡 About Augmented Reality
+## 💡 About Push To Talk
 (해당 기술에 대한 조사 내용 정리)
 
 > **예시** <br/><br/>

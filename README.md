@@ -32,4 +32,48 @@ PushToTalk을 이용하면 채널 내에 있는 사용자들과 간단하게 소
 ![NC2 Act 아서and키니 002](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-M4-Push_to_Talk/assets/166780563/e341ef03-c1b5-401f-b802-7e7c12ccd928)
 
 ## 🛠️ About Code
-(핵심 코드에 대한 설명 추가)
+##### PTT Channel Manager & Channel UUID & Channel Descriptor 선언
+```
+var channelManager: PTChannelManager!
+
+let channelUUID = UUID()
+
+let channelDescriptor = PTChannelDescriptor(name: "Channel Name", image: UIImage(systemName: "person"))
+```
+##### PTT Channel Manager 설정
+```
+channelManager = try await PTChannelManager.channelManager(delegate: self, restorationDelegate: self)
+```
+##### Channel 참가 요청 메서드
+```
+channelManager.requestJoinChannel(channelUUID: channelUUID, descriptor: channelDescriptor)
+```
+##### Channel 오디오 전송 요청 메서드
+```
+channelManager.requestBeginTransmitting(channelUUID: channelUUID)
+```
+##### Channel 오디오 전송 메서드의 호출이 성공적이었을 때, 콜백되는 메서드
+```
+func channelManager(_ channelManager: PTChannelManager,
+                    channelUUID: UUID,
+                    didBeginTransmittingFrom source: PTChannelTransmitRequestSource) {        
+                    
+}
+```
+##### 오디오의 활성화되었을 때, 콜백되는 메서드
+```
+func channelManager(_ channelManager: PTChannelManager,
+                    didActivate audioSession: AVAudioSession) {        
+
+}
+```
+##### 서버에서 PTT Notification을 받았을 때(다른 유저의 Audio를 받았을 때), 콜백되는 메서드
+```
+func incomingPushResult(channelManager: PTChannelManager, channelUUID: UUID, pushPayload: [String : Any]) -> PTPushResult {
+	
+	let activeSpeakerName = pushPayload[“activeSpeaker”]
+	let activeSpeakerImage = getActiveSpeakerImage(name: activeSpeakerName)
+	return .activeRemoteParticipant(PTParticipant(name: activeSpeakerName,
+                                    image: activeSpeakerImage))
+}
+```

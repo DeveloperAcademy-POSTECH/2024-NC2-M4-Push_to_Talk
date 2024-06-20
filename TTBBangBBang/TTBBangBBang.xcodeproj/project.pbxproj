@@ -14,7 +14,7 @@
 		5107F5CB2C24C18000F61165 /* MyCarpoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107F5C72C24C18000F61165 /* MyCarpoolListView.swift */; };
 		5107F5CD2C24C19400F61165 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107F5CC2C24C19400F61165 /* Extensions.swift */; };
 		5107F5CF2C24C19D00F61165 /* PTTChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107F5CE2C24C19D00F61165 /* PTTChannelManager.swift */; };
-		5107F5D12C24C36E00F61165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5107F5D02C24C36E00F61165 /* Assets.xcassets */; };
+		5107F5D32C24C54600F61165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5107F5D22C24C54600F61165 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		5107F5C72C24C18000F61165 /* MyCarpoolListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCarpoolListView.swift; sourceTree = "<group>"; };
 		5107F5CC2C24C19400F61165 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5107F5CE2C24C19D00F61165 /* PTTChannelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTTChannelManager.swift; sourceTree = "<group>"; };
-		5107F5D02C24C36E00F61165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../PushToTalkTest/TTBBangBBang/Assets.xcassets; sourceTree = "<group>"; };
+		5107F5D22C24C54600F61165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				5107F5B52C24C0FD00F61165 /* TTBBangBBangApp.swift */,
 				5107F5CE2C24C19D00F61165 /* PTTChannelManager.swift */,
 				5107F5CC2C24C19400F61165 /* Extensions.swift */,
-				5107F5D02C24C36E00F61165 /* Assets.xcassets */,
+				5107F5D22C24C54600F61165 /* Assets.xcassets */,
 				5107F5BB2C24C0FF00F61165 /* Preview Content */,
 			);
 			path = TTBBangBBang;
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5107F5BD2C24C0FF00F61165 /* Preview Assets.xcassets in Resources */,
-				5107F5D12C24C36E00F61165 /* Assets.xcassets in Resources */,
+				5107F5D32C24C54600F61165 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
